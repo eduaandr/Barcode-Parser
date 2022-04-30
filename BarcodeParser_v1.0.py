@@ -1,5 +1,5 @@
 # BardcodeParser
-# Description: Program that parses the barcode digits from invoices registries.
+# Description: Program that parses the barcode digits from invoices registries
 # Author: Eduardo Andrade
 # Date: 2022/04/30
 # Version: 1.0
