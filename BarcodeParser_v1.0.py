@@ -16,7 +16,7 @@ with open(r"filelocation\Sample_Raw.csv") as file:
     # initiate the integer for total raw registries counter
     count_current = 0
 
-    # initiate the integer for parsed registries counter. Ideally count_Current = count_parsed
+    # initiate the integer for parsed registries counter. Ideally count_current = count_parsed
     count_parsed = 0
 
     # initiate the integer for exception registries counter
