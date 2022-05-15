@@ -1,4 +1,4 @@
-# BardcodeParser
+# Bardcode-Parser
 # Description: Program that parses the barcode digits from invoice registries
 # Author: Eduardo Andrade
 # Date: 2022/04/30
