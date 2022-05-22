@@ -31,10 +31,10 @@ with open(r">>filelocation<<\Sample_Raw.csv") as file:
     # loop that scans all the registries within variable reader
     for row in reader:
 
-        # append scanned row to variable string_raw
+        # append scanned row to string_raw
         string_raw.append(str(row))
 
-        # assign string_raw to string_aux variable
+        # assign string_raw to string_aux 
         string_aux = string_raw[count_current]
 
         # try to search for a character sequence
@@ -43,7 +43,7 @@ with open(r">>filelocation<<\Sample_Raw.csv") as file:
             # look for 3522 sequence in the row
             index = string_aux.index('3522')
 
-            # append the invoice 44-digit number of the scanned row to variable string_parsed
+            # append the invoice 44-digit number of the scanned row to string_parsed
             string_parsed.append(string_aux[index:(index + 44)])
 
             # increment count_parsed
@@ -67,7 +67,7 @@ file = open(r">>filelocation<<\Sample_Parsed.txt", "w+")
 # initiate the integer i
 i = 0
 
-# scans all count_parsed variables
+# scans all count_parsed registries
 while i < count_parsed:
 
     # write the corresponding index to file
