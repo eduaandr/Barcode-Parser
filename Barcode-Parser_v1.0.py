@@ -22,8 +22,8 @@ string_raw = []
 # initiate the array for parsed registries
 string_parsed = []
 
-# open the specified .csv file. Replace string filelocation with the actual file's directory
-with open(r"filelocation\Sample_Raw.csv") as file:
+# open the specified .csv file. Replace string >>filelocation<< with the actual file's directory
+with open(r">>filelocation<<\Sample_Raw.csv") as file:
 
     # assign the opened file to variable reader
     reader = csv.reader(file)
@@ -61,8 +61,8 @@ with open(r"filelocation\Sample_Raw.csv") as file:
 # get the total counted rows
 count_total = count_current
 
-# create the specified .txt file. Replace string filelocation with the actual file's directory
-file = open(r"filelocation\Sample_Parsed.txt", "w+")
+# create the specified .txt file. Replace string >>filelocation<< with the actual file's directory
+file = open(r">>filelocation<<\Sample_Parsed.txt", "w+")
 
 # initiate the integer i
 i = 0
