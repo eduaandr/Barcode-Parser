@@ -6,27 +6,27 @@
 
 # import csv library
 import csv
+    
+# initiate the integer for total raw registries counter
+count_current = 0
+
+# initiate the integer for parsed registries counter. Ideally count_current = count_parsed
+count_parsed = 0
+
+# initiate the integer for exception registries counter
+count_exception = 0
+
+# initiate the array for raw registries
+string_raw = []
+
+# initiate the array for parsed registries
+string_parsed = []
 
 # open the specified .csv file. Replace string filelocation with the actual file's directory
-with open(r"filelocation\Sample_Raw.csv") as file:
+with open(r"C:\Users\eduaa\Desktop\Barco\Sample_Raw.csv") as file:
 
     # assign the opened file to variable reader
     reader = csv.reader(file)
-
-    # initiate the integer for total raw registries counter
-    count_current = 0
-
-    # initiate the integer for parsed registries counter. Ideally count_current = count_parsed
-    count_parsed = 0
-
-    # initiate the integer for exception registries counter
-    count_exception = 0
-
-    # initiate the array for raw registries
-    string_raw = []
-
-    # initiate the array for parsed registries
-    string_parsed = []
 
     # loop that scans all the registries within variable reader
     for row in reader:
@@ -58,32 +58,32 @@ with open(r"filelocation\Sample_Raw.csv") as file:
         # increment count_current
         count_current = count_current + 1
 
-    # get the total counted rows
-    count_total = count_current
+# get the total counted rows
+count_total = count_current
 
-    # create the specified .txt file. Replace string filelocation with the actual file's directory
-    file = open(r"filelocation\Sample_Parsed.txt", "w+")
+# create the specified .txt file. Replace string filelocation with the actual file's directory
+file = open(r"C:\Users\eduaa\Desktop\Barco\Sample_Parsed.txt", "w+")
 
-    # initiate the integer i
-    i = 0
+# initiate the integer i
+i = 0
 
-    # scans all count_parsed variables
-    while i < count_parsed:
+# scans all count_parsed variables
+while i < count_parsed:
 
-        # write the corresponding index to file
-        file.write(string_parsed[i])
+    # write the corresponding index to file
+    file.write(string_parsed[i])
 
-        # inset line break in file
-        file.write("\n")
+    # inset line break in file
+    file.write("\n")
 
-        # increment i
-        i = i + 1
+    # increment i
+    i = i + 1
 
-    # print total counter
-    print("Total:", count_total)
+# print total counter
+print("Total:", count_total)
 
-    # print parsed counter
-    print("Parsed:", count_parsed)
+# print parsed counter
+print("Parsed:", count_parsed)
 
-    # print exceptions counter
-    print("Exceptions:", count_exception)
+# print exceptions counter
+print("Exceptions:", count_exception)
