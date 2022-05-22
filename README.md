@@ -1,2 +1,2 @@
 # Barcode-Parser
-Program that parses the barcode digits from invoices registries.
+Program that parses the barcode digits from invoice registries.
