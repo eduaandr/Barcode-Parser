@@ -67,7 +67,7 @@ file = open(r">>filelocation<<\Sample_Parsed.txt", "w+")
 # initiate the integer i
 i = 0
 
-# scans all count_parsed registries
+# scans all registries in count_parsed
 while i < count_parsed:
 
     # write the corresponding index to file
