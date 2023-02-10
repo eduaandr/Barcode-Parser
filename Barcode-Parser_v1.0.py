@@ -7,7 +7,7 @@
 import csv
 
 # open the specified .csv file
-with open(r"C:\Users\eduaa\Documents\GAAR\NFs\InvoiceParser\Version_2.0\codes_202204171059522.csv") as file:
+with open(r"C:\Users\eduaa\codes_202204171059522.csv") as file:
 
     # assign the opened file to variable reader
     reader = csv.reader(file)
