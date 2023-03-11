@@ -1,4 +1,4 @@
-# BardcodeParser
+# Barcode-Parser
 # Description: Program to parse invoice registries from csv files
 # Date: 2022/04/30
 # Version: 1.0
